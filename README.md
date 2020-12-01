@@ -9,6 +9,8 @@ Student Dashboard
 Admin Dashboard
 <img src="Screenshot/admin-dashboard.png">
 
+<br>
+Create New Account
 <img src="Screenshot/1.png">
 <img src="Screenshot/2.png">
 <img src="Screenshot/3.png">
