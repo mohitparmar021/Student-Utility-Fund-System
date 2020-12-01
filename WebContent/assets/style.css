@@ -1,0 +1,74 @@
+@CHARSET "ISO-8859-1";
+
+#wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+#wrapper #content-wrapper {
+	overflow-x: hidden;
+	width: 100%;
+	padding-top: 1rem;
+	padding-bottom: 80px;
+	margin-left: 245px;
+}
+
+.sidenav {
+	min-height: calc(100vh - 56px);
+	width: 245px !important;
+	background-color:#1c652d;  
+	position: absolute;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 16px;
+	color: white;
+	display: block;
+	border: none;
+	background: none;
+	width: 100%;
+	text-align: left;
+	cursor: pointer;
+	outline: none;
+}
+/* On mouse-over */
+.sidenav a:hover,.dropdown-btn:hover {
+	color: black;
+	background-color:white;
+}
+
+.o-hidden {
+	overflow: hidden !important;
+}
+
+.card-body-icon {
+	position: absolute;
+	z-index: 0;
+	top: -1.25rem;
+	right: -1rem;
+	opacity: 0.4;
+	font-size: 10rem;
+	-webkit-transform: rotate(15deg);
+	transform: rotate(15deg);
+}
+
+footer.sticky-footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: calc(100% -   245px);
+	height: 80px;
+	background-color: #e9ecef;
+}
+
+footer.sticky-footer .copyright {
+	line-height: 1;
+	font-size: 20px;
+}

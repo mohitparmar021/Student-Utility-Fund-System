@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="assets/libraryfile/bootstrap.min.css">
+    <script src="assets/libraryfile/jquery-3.4.1.min.js"></script> 
+
+<style type="text/css">
+	body
+ 	{
+ 		background-color: #f1f1f1;
+ 		
+ 	}
+	.card
+    {
+     	width: 480px;
+     	height: 400px;
+     	background-color: white;
+        border-radius: 0px;
+     	position: absolute;
+    	left:50%;
+    	top:50%;
+    	transform: translate(-50%,-50%);
+
+     }
+     .register
+     {
+     	width: 480px;
+     	height: 450px;
+     	background-color: white;
+        border-radius: 0px;
+     	position: absolute;
+    	left:50%;
+    	top:50%;
+    	transform: translate(-50%,-50%);
+     }
+	.btn
+	{
+		border-radius: 0px;
+		width:40%;
+	}
+	.field
+	{
+		height: 50px;
+		border-radius: 0px;
+		border-top: 0px;
+		border-left: 0px;
+		border-right: 0px;
+		width: 90%;
+		margin-left: 20px;
+		background-color: #f1f1f1;
+	}
+	.btn-eu
+	{
+		margin-left: 60px;	
+	}
+
+	.btn-submit
+	{
+		margin-left: 25%;
+	}
+    #register-form
+    {
+    	display: none;
+    }
+
+</style>
+
+</head>
+<body>
+
+<div class="card" id="Login-form">
+	  
+	  <h1 class="mt-4 ml-4 mb-3"><button class="btn btn-lg btn-primary" id="btn-user">Existing User</button><button class="btn btn-eu btn-lg  btn-success" id="btn-register">New User</button></h1>
+
+	  <div class="">
+	  	    <form action="loginuser" method="post" onsubmit="return validateLogin()">
+	  	    	   
+	  	    	   <input type="text" name="username" id="username" autocomplete="off" placeholder="Enter Your Username" class="form-control mt-5 field">
+                   <input type="password" name="password" id="password" autocomplete="off" placeholder="Enter Your Password" class="form-control mt-4 field">
+                   <input type="submit" name="" value="Login" class="btn btn-lg btn-submit btn-success mt-5">
+	  	    </form>
+
+	  </div>  
+</div>
+
+
+<div class="card register" id="register-form">
+
+	 <h1 class="mt-4 ml-4 mb-3"><button class="btn btn-lg btn-primary" id="btn-user1">Existing User</button><button class="btn btn-eu btn-lg  btn-success" id="btn-register">New User</button></h1>
+
+    <div class="">
+	  	    <form action="registerUser" method="post" onsubmit="return validateRegister()">
+	  	    	   
+	  	    	   <input type="email" name="username" required id="newUser"  autocomplete="off" placeholder="Enter Your Email" class="form-control mt-5 field">
+                   <input type="password" name="password" required id="newPass" autocomplete="off" placeholder="Enter Your Password" class="form-control mt-4 field">
+                    <input type="password" name="confirmpassword" required id="newConfirmPass" autocomplete="off" placeholder="Confirm Your Password" class="form-control mt-4 field">
+                   <input type="submit" name="" value="Register" class="btn btn-lg btn-submit btn-success mt-5">
+	  	    </form>
+
+	  </div>
+</div>
+
+<script type="text/javascript">
+          
+$('document').ready(function(){
+
+           $('#btn-user').click(function(){
+                $('#login-form').show();
+                $('#register-form').hide();
+  
+           });
+
+           $('#btn-register').click(function(){
+        	   $('#register-form').show();
+                $('#login-form').hide();
+           });
+            $('#btn-user1').click(function(){
+                $('#login-form').show();
+                $('#register-form').hide();
+  
+           });
+          
+	});
+
+
+function validateLogin() {
+
+    var username=document.getElementById('username').value;
+    var password=document.getElementById('password').value;
+    if(username=="")
+    {
+    	alert("Please Enter UserName");
+    	return false;
+    }
+    else if(password=="")
+    {
+    	alert("Please Enter Password");
+    	return false;
+    }
+    else
+    {
+    	return true;
+    }
+
+}
+
+</script>
+
+</body>
+</html>
