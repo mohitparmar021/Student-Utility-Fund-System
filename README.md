@@ -23,6 +23,8 @@ Create New Account
 <img src="Screenshot/10.png">
 <img src="Screenshot/11.png">
 <img src="Screenshot/12.png">
+<br>
+Admin Login
 <img src="Screenshot/13.png">
 <img src="Screenshot/14.png">
 <img src="Screenshot/15.png">
@@ -37,5 +39,9 @@ Create New Account
 <img src="Screenshot/25.png">
 <img src="Screenshot/26.png">
 <img src="Screenshot/27.png">
+<br>
+Student Login ( Confirm Grant Update visible )
 <img src="Screenshot/28.png">
+<br>
+Student Login ( Cancel Grant update visible )
 <img src="Screenshot/29.png">
