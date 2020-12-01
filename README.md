@@ -6,11 +6,13 @@
 
 Student Dashboard
 <img src="Screenshot/student-dashboard.png">
+<br><br>
 Admin Dashboard
+<br>
 <img src="Screenshot/admin-dashboard.png">
 
-<br>
-Create New Account
+<br><br>
+Create New Account<br>
 <img src="Screenshot/1.png">
 <img src="Screenshot/2.png">
 <img src="Screenshot/3.png">
